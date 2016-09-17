@@ -1,0 +1,471 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  background: #fff; }
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: 400;
+  text-align: left; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
+
+a img {
+  border: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Colours */
+/* Functions */
+/**
+ * returns one of two colours depending on the brightness of specified colour
+ * @param  {string} $colour hex ref or rgba value of a colour to check 
+ * @return {string}         a hex ref or rgba colour value
+ */
+/**
+ * decides whether to lighten or darken the colour provided
+ * @param  {string} $colour hex ref or rgba value of a colour to check 
+ * @return {string}         a hex ref or rgba colour value
+ */
+/* Transitions */
+.transition-colour, a, a:hover, .btn.outlined, a.btn.outlined, .btn.outlined:hover, a.btn.outlined:hover {
+  transition: color 0.3s; }
+
+.transition-bg-colour, .btn, a.btn, .btn:hover, a.btn:hover {
+  transition: background-color 0.3s; }
+
+/* Apply color */
+.primary {
+  color: #67166B; }
+
+.secondary {
+  color: #AD1982; }
+
+.tertiary {
+  color: #34A2B2; }
+
+/* Apply background + color */
+.primary-bg {
+  background-color: #67166B;
+  color: #fff; }
+
+.secondary-bg {
+  background-color: #AD1982;
+  color: #fff; }
+
+.tertiary-bg {
+  background-color: #34A2B2;
+  color: #fff; }
+
+.primary-bg a, .secondary-bg a, .tertiary-bg a {
+  color: #fff; }
+
+.primary-bg a:hover, .secondary-bg a:hover, .tertiary-bg a:hover {
+  color: rgba(255, 255, 255, 0.5); }
+
+/**
+ * Generate font-size property in both PX and REM (to support IE8 and below)
+ * @param  {float} $sizeValue   the font size requried in REMs
+ * @return {string}             outputs the font-size in px and rem
+ */
+/* Typography */
+h1, h1 a, .h1 a, .h1, a.h1, a .h1 {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1.6rem; }
+
+h2, h2 a, .h2 a, .h2, a.h2, a .h2 {
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1.4rem; }
+
+h3, h3 a, .h3 a, .h3, a.h3, a .h3 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 1.4rem; }
+
+h4, h4 a, .h4 a, .h4, a.h4, a .h4 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 1.4rem;
+  font-weight: 700; }
+
+p {
+  font-size: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.2; }
+
+a {
+  color: #34A2B2;
+  text-decoration: none; }
+
+a:hover {
+  transition: color 0.3s;
+  color: #1d5a63;
+  text-decoration: underline; }
+
+small {
+  font-size: 9px;
+  font-size: 0.9rem; }
+
+em {
+  font-weight: 700;
+  text-decoration: underline; }
+
+/* Site Header */
+#site-header .h1 {
+  margin: 0;
+  line-height: 1; }
+
+/* Text Alignment */
+.text-center {
+  text-align: center; }
+
+/* 
+BUTTONS 
+*/
+.btn, a.btn {
+  display: inline-block;
+  padding: 0.4rem 2rem;
+  margin: 0.2rem 0.3rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 0 0 5px 0;
+  border-style: solid;
+  background-color: #2F2C29;
+  border-color: #141211;
+  color: #F0F0F0; }
+
+.btn:hover, a.btn:hover {
+  background-color: #4a4641;
+  border-color: #2f2c29; }
+
+.btn.outlined, a.btn.outlined {
+  border-width: 2px;
+  background: transparent;
+  border-color: #2F2C29;
+  color: #2F2C29; }
+
+.btn.outlined:hover, a.btn.outlined:hover {
+  background-color: #2F2C29;
+  color: #fff; }
+
+.btn.large {
+  padding: 1rem 3.5rem;
+  font-size: 1.2rem; }
+
+.btn.primary, a.btn.primary {
+  background-color: #67166B;
+  border-color: #3e0d41;
+  color: #fff; }
+
+.btn.primary:hover, a.btn.primary:hover {
+  background-color: #901f95;
+  border-color: #67166b; }
+
+.btn.outlined.primary, a.btn.outlined.primary {
+  background: transparent;
+  border-color: #67166B;
+  color: #67166B; }
+
+.btn.outlined.primary:hover, a.btn.outlined.primary:hover {
+  background-color: #67166B;
+  color: #fff; }
+
+.btn.secondary, a.btn.secondary {
+  background-color: #AD1982;
+  border-color: #801361;
+  color: #fff; }
+
+.btn.secondary:hover, a.btn.secondary:hover {
+  background-color: #da1fa3;
+  border-color: #ad1982; }
+
+.btn.outlined.secondary, a.btn.outlined.secondary {
+  background: transparent;
+  border-color: #AD1982;
+  color: #AD1982; }
+
+.btn.outlined.secondary:hover, a.btn.outlined.secondary:hover {
+  background-color: #AD1982;
+  color: #fff; }
+
+.btn.tertiary, a.btn.tertiary {
+  background-color: #34A2B2;
+  border-color: #287e8b;
+  color: #fff; }
+
+.btn.tertiary:hover, a.btn.tertiary:hover {
+  background-color: #4ebbcb;
+  border-color: #34a2b2; }
+
+.btn.outlined.tertiary, a.btn.outlined.tertiary {
+  background: transparent;
+  border-color: #34A2B2;
+  color: #34A2B2; }
+
+.btn.outlined.tertiary:hover, a.btn.outlined.tertiary:hover {
+  background-color: #34A2B2;
+  color: #fff; }
+
+.btn.light, a.btn.light {
+  background-color: #F0F0F0;
+  border-color: #d6d6d6;
+  color: #2F2C29; }
+
+.btn.light:hover, a.btn.light:hover {
+  background-color: #d6d6d6;
+  border-color: #bdbdbd; }
+
+.btn.outlined.light, a.btn.outlined.light {
+  background: transparent;
+  border-color: #F0F0F0;
+  color: #F0F0F0; }
+
+.btn.outlined.light:hover, a.btn.outlined.light:hover {
+  background-color: #F0F0F0;
+  color: #313131; }
+
+/*
+HORIZONTAL RULES
+ */
+hr {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #2F2C29;
+  margin: 1rem 0; }
+
+hr.primary {
+  border-color: #67166B; }
+
+hr.secondary {
+  border-color: #AD1982; }
+
+hr.tertiary {
+  border-color: #34A2B2; }
+
+hr.light {
+  border-color: #F0F0F0; }
+
+/*
+TABLES
+ */
+table {
+  border-radius: 4px;
+  border: #67166B solid 1px;
+  background-color: #F0F0F0;
+  width: 100%;
+  border-spacing: 2px;
+  border-collapse: separate;
+  display: block; }
+
+table tr:nth-child(odd) {
+  background-color: #d6d6d6; }
+
+table th {
+  padding: 4px 6px;
+  color: #F0F0F0;
+  background-color: #67166B;
+  font-weight: bold; }
+
+table td {
+  padding: 4px 6px; }
+
+code {
+  display: block;
+  background: #2F2C29;
+  color: #CDA869;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+  word-wrap: break-word; }
+
+code .indent {
+  display: block;
+  padding-left: 3rem; }
+
+code .attr-val {
+  color: #8F9D66; }
+
+code .text {
+  color: #F0F0F0; }
+
+/* Core styling */
+body {
+  font-family: "Lato", sans-serif;
+  color: #2F2C29;
+  background-color: #F0F0F0;
+  padding: 0;
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.boxgrid.example > .col {
+  background-color: #34A2B2;
+  padding: 0.5rem 1rem;
+  color: #F0F0F0; }
+
+#site-footer .content {
+  border-top: #67166B solid 3px; }
+
+/* Media queries */
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 10px;
+    /* Base for default fonts */ }
+
+  /* 
+  STRIPS 
+  */
+  .strip > .content {
+    padding: 1rem 20px;
+    overflow-x: hidden; }
+
+  /*
+  FEATURES
+   */
+  .feature {
+    text-align: center;
+    margin-top: 1rem; }
+
+  .feature p {
+    margin: 1.5rem 0 0 0;
+    font-family: 'Reenie Beanie', cursive;
+    line-height: 0.8; }
+
+  .feature .icon {
+    width: 90px;
+    height: 90px;
+    padding: 2rem;
+    background-color: #34A2B2;
+    border-radius: 90px;
+    display: inline-block; }
+
+  .feature .icon img {
+    max-width: 100%;
+    max-height: 100%; }
+
+  /*
+  BROWSERS
+   */
+  .browser {
+    text-align: center; }
+
+  .browser i {
+    display: inline-block;
+    font-size: 50px;
+    font-size: 5rem;
+    color: #34A2B2;
+    margin-bottom: 1rem; }
+
+  .browser p {
+    color: #34A2B2; }
+
+  /*
+  TABLES
+   */
+  table {
+    overflow-x: scroll; }
+
+  table thead, table tbody {
+    display: table;
+    min-width: 100%; }
+
+  table td, table th {
+    min-width: 80px; }
+
+  table td:first-child, table th:first-child {
+    min-width: 100px; } }
+@media screen and (min-width: 450px) {
+  /*
+  FEATURES
+   */
+  .feature .icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px; } }
+@media screen and (min-width: 690px) {
+  html {
+    font-size: 12px;
+    /* Base for default fonts */ }
+
+  /*
+  TABLES
+   */
+  table {
+    display: table;
+    overflow-x: auto; }
+
+  table thead, table tbody {
+    display: auto; }
+
+  table td:first-child, table th:first-child {
+    min-width: 80px; } }
+@media screen and (min-width: 999px) {
+  html {
+    font-size: 13px;
+    /* Base for default fonts */ }
+
+  /*
+  FEATURES
+   */
+  .feature .icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px; } }
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 14px;
+    /* Base for default fonts */ }
+
+  /* Strip */
+  .strip > .content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0; } }
+
+/*# sourceMappingURL=styles.css.map */

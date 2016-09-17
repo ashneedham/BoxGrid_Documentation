@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+		<meta name="description" content="A flexbox grid system for rapid website development">
+		<meta name="keywords" content="flexbox, website grid, flexbox grid, css, frontend development, website development">
+		<title>BoxGrid | A flexbox grid for rapid website development</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+		<link href="css/boxgrid.min.css" rel="stylesheet" type="text/css">
+		<link href="css/icomoon.css" rel="stylesheet" type="text/css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<!--[if IE 9]>
+			<link href="css/boxgrid-ie.min.css" rel="stylesheet" type="text/css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<script type="text/javascript" src="js/boxgrid-ie-fix.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header id="site-header" class="strip primary-bg">
+			<div class="content">
+				<div class="boxgrid">
+					<div class="col md_3 xs_center md_left xs_middle">
+						<h3 class="h1"><a href="http://boxgrid.net">BoxGrid</a></h3>
+					</div>
+					<div class="col md_5 xs_center md_right xs_middle">
+						
+					</div>
+					<div class="col md_4 xs_center md_right xs_middle">
+						<a href="https://github.com/ashneedham/BoxGrid/archive/master.zip" class="btn outlined light"><i class="icon-download3"></i> Download</a>
+						<a href="https://github.com/ashneedham/BoxGrid/fork" class="btn outlined light"><i class="icon-github4"></i> Fork me</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<article class="strip">
+			<div class="content">
+				<div class="boxgrid">
+					<div class="col sm_8 sm_pre_2 sm_post_2 xl_6 xl_pre_3 xl_post_3 text-center">
+						<h1 class="primary">a flexbox grid for rapid website development</h1>
+						<p>Based on the concept of other popular grid systems such as those by Bootstrap and Foundation, BoxGrid offers all the usual grid features + more.</p>
+					</div>
+					<div class="col xs_6 md_3 xl_2 xl_pre_2">
+						<div class="feature">
+							<div class="icon">
+								<img src="img/science_flask.svg" alt="a graphic of a sciencific flask">
+							</div>
+							<p class="h2">responsive<br>sizing</p>
+						</div>
+					</div>
+					<div class="col xs_6 md_3 xl_2">
+						<div class="feature">
+							<div class="icon">
+								<img src="img/brain.svg" alt="a graphic of a brain">
+							</div>
+							<p class="h2">intelligent<br>columns</p>
+						</div>
+					</div>
+					<div class="col xs_6 md_3 xl_2">
+						<div class="feature">
+							<div class="icon">
+								<img src="img/lightbulb.svg" alt="a graphic of a lightbulb">
+							</div>
+							<p class="h2">minimalist<br>code</p>
+						</div>
+					</div>
+					<div class="col xs_6 md_3 xl_2">
+						<div class="feature">
+							<div class="icon">
+								<img src="img/book.svg" alt="a graphic of a closed book">
+							</div>
+							<p class="h2">readable<br>documentation</p>
+						</div>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col sm_8 sm_pre_2 sm_post_2 xl_6 xl_pre_3 xl_post_3 text-center">
+						<h2 class="h1 primary">support for the most common web browsers</h2>
+						<p>BoxGrid works on all the latest browsers and even back to IE9 (possibly even IE8 but untested).</p>
+					</div>
+					<div class="col xs_4 md_2 md_pre_1 text-center">
+						<div class="browser">
+							<i class="icon-chrome"></i>
+							<p>Chrome<br>v21+</p>
+						</div>
+					</div>
+					<div class="col xs_4 md_2 text-center">
+						<div class="browser">
+							<i class="icon-firefox"></i>
+							<p>Firefox<br>v28+</p>
+						</div>
+					</div>
+					<div class="col xs_4 md_2 text-center">
+						<div class="browser">
+							<i class="icon-safari"></i>
+							<p>Safari<br>v6.1+</p>
+						</div>
+					</div>
+					<div class="col xs_4 xs_pre_2 md_2 md_pre_0 text-center">
+						<div class="browser">
+							<i class="icon-IE"></i>
+							<p>Internet Explorer<br>v10+<br><small>(9 using js)</small></p>
+						</div>
+					</div>
+					<div class="col xs_4 md_2 text-center">
+						<div class="browser">
+							<i class="icon-opera"></i>
+							<p>Opera<br>v12.1+</p>
+						</div>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col sm_8 sm_pre_2 sm_post_2 xl_6 xl_pre_3 xl_post_3 text-center">
+						<h2 class="h1 primary">how to use</h2>
+						<p>BoxGrid is really simple to install as it consists of 1 core css file and if you want to support IE9 then 1 extra css + 1 js file + jQuery.</p>
+					</div>
+					<div class="col">
+						<code>
+							&lt;link href="<span class="attr-val">css/boxgrid.min.css</span>" rel="<span class="attr-val">stylesheet</span>" type="<span class="attr-val">text/css</span>"&gt;<br>
+							<span class="comment">
+								&lt;!--[if IE 9]&gt;
+								<span class="indent">
+									&lt;link href="<span class="attr-val">css/boxgrid-ie.min.css</span>" rel="<span class="attr-val">stylesheet</span>" type="<span class="attr-val">text/css</span>"&gt;<br>
+									&lt;script src="<span class="attr-val">https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js</span>"&gt;&lt;/script&gt;<br>
+									&lt;script type="<span class="attr-val">text/javascript</span>" src="<span class="attr-val">js/boxgrid-ie-fix.min.js</span>"&gt;&lt;/script&gt;
+								</span>
+								&lt;![endif]--&gt;
+							</span>
+						</code>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col">
+						<h3 id="breakpoints" class="primary">Responsive Break-points</h3>
+					</div>
+					<div class="col md_5">
+						<p>The grid uses 5 break-points to allow for varying layouts at different screen sizes. Apply the prefix followed by the number of column span required, to each column.</p>
+						<p>Styles for each break-point override the previous.</p>
+					</div>
+					<div class="col md_7">
+						<table>
+							<tbody>
+								<tr>
+									<th>Name</th>
+									<th>Class prefix</th>
+									<th>Screen size</th>
+								</tr>
+								<tr>
+									<td>X-Small</td>
+									<td>xs_</td>
+									<td>>= 300px</td>
+								</tr>
+								<tr>
+									<td>Small</td>
+									<td>sm_</td>
+									<td>>= 450px</td>
+								</tr>
+								<tr>
+									<td>Medium</td>
+									<td>md_</td>
+									<td>>= 750px</td>
+								</tr>
+								<tr>
+									<td>Large</td>
+									<td>lg_</td>
+									<td>>= 1200px</td>
+								</tr>
+								<tr>
+									<td>X-Large</td>
+									<td>xl_</td>
+									<td>>= 1600px</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col">
+						<h3 id="column-sizes" class="primary">Column sizes</h3>
+						<p>All columns must have a class of <em>col</em>. By default a column will be 100% wide.</p>
+						<p>Apply a prefixed number to specify how many columns a particular column will span e.g. md_4 (medium span 4).</p>
+						<p>Column sizes range from <em>0</em> (zero) to <em>12</em> (twelve).</p>
+					</div>
+					<div class="col lg_7">
+						<div class="boxgrid example">
+							<div class="col">12</div>
+							<div class="col xs_11">11</div>
+							<div class="col xs_1">1</div>
+							<div class="col xs_10">10</div>
+							<div class="col xs_2">2</div>
+							<div class="col xs_9">9</div>
+							<div class="col xs_3">3</div>
+							<div class="col xs_8">8</div>
+							<div class="col xs_4">4</div>
+							<div class="col xs_7">7</div>
+							<div class="col xs_5">5</div>
+							<div class="col xs_6">6</div>
+							<div class="col xs_6">6</div>
+							<div class="col xs_5">5</div>
+							<div class="col xs_7">7</div>
+							<div class="col xs_4">4</div>
+							<div class="col xs_8">8</div>
+							<div class="col xs_3">3</div>
+							<div class="col xs_9">9</div>
+							<div class="col xs_2">2</div>
+							<div class="col xs_10">10</div>
+							<div class="col xs_1">1</div>
+							<div class="col xs_11">11</div>
+						</div>
+					</div>
+					<div class="col lg_5">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col</span>"&gt;<span class="text">12</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_11</span>"&gt;<span class="text">11</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_1</span>"&gt;<span class="text">1</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_10</span>"&gt;<span class="text">10</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_2</span>"&gt;<span class="text">2</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_9"</span>&gt;<span class="text">9</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3"</span>&gt;<span class="text">3</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_8"</span>&gt;<span class="text">8</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_4"</span>&gt;<span class="text">4</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_7"</span>&gt;<span class="text">7</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_5"</span>&gt;<span class="text">5</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_6</span>"&gt;<span class="text">6</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_6</span>"&gt;<span class="text">6</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_5</span>"&gt;<span class="text">5</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_7</span>"&gt;<span class="text">7</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_4</span>"&gt;<span class="text">4</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_8</span>"&gt;<span class="text">8</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3</span>"&gt;<span class="text">3</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_9</span>"&gt;<span class="text">9</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_2</span>"&gt;<span class="text">2</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_10</span>"&gt;<span class="text">10</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_1</span>"&gt;<span class="text">1</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_11</span>"&gt;<span class="text">11</span>&lt;/div&gt;
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col">
+						<h3 id="pre-column-spacing" class="primary">Pre column spacing</h3>
+						<p>Add blank spaces to the left of a column using the pre-spacing values.</p>
+						<p>To use pre-spacing, add a class constructed of the <a href="#breakpoints">break-point prefix</a> along with a prefix of <em>pre_</em> followed by the number of columns spacing required (0 - 11).</p>
+					</div>
+					<div class="col lg_7">
+						<div class="boxgrid example">
+							<div class="col xs_9 xs_pre_3">9</div>
+							<div class="col xs_7 xs_pre_5">7</div>
+							<div class="col xs_4 xs_pre_8">4</div>
+							<div class="col xs_3 xs_pre_9">3</div>
+						</div>
+					</div>
+					<div class="col lg_5">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col xs_9 xs_pre_3</span>"&gt;<span class="text">9</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_7 xs_pre_5</span>"&gt;<span class="text">7</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_4 xs_pre_8</span>"&gt;<span class="text">4</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3 xs_pre_9</span>"&gt;<span class="text">3</span>&lt;/div&gt;<br>
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col">
+						<h3 id="post-column-spacing" class="primary">Post column spacing</h3>
+						<p>You may wish to prevent any further spacing, after a column, from being used. This is particularly useful if you wish to create the effect of a new row.</p>
+						<p>To apply post-spacing, add a class constructed of the <a href="#breakpoints">break-point prefix</a> along with a prefix of <em>post_</em> followed by the number of columns space required (0 - 11).</p>
+					</div>
+					<div class="col lg_7">
+						<div class="boxgrid example">
+							<div class="col xs_8 xs_post_4">8</div>
+							<div class="col xs_4 xs_post_8">4</div>
+							<div class="col xs_3">3</div>
+						</div>
+					</div>
+					<div class="col lg_5">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col xs_8 xs_post_4</span>"&gt;<span class="text">8</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_4 xs_post_8</span>"&gt;<span class="text">4</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3</span>"&gt;<span class="text">3</span>&lt;/div&gt;<br>
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col">
+						<h3 id="equal-height-columns" class="primary">Equal height columns</h3>
+						<p>By default, the columns are of equal height per row (one of the perks of Flexbox).</p>
+					</div>
+					<div class="col lg_7">
+						<div class="boxgrid example">
+							<div class="col xs_6 md_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod magna et metus efficitur sagittis. Maecenas efficitur ante at lectus viverra, consequat varius tortor hendrerit. Praesent a pulvinar augue, vel porta urna. Quisque sodales posuere tristique. Ut vitae diam eu arcu accumsan lacinia et a mi.</div>
+							<div class="col xs_6 md_4">Maecenas efficitur ante at lectus viverra, consequat varius tortor hendrerit.</div>
+							<div class="col xs_6 md_4">Praesent a pulvinar augue, vel porta urna. Quisque sodales posuere tristique. Ut vitae diam eu arcu accumsan lacinia et a mi.</div>
+							<div class="col xs_6 md_4">Praesent a pulvinar augue, vel porta urna. Quisque sodales posuere tristique. Ut vitae diam eu arcu accumsan lacinia et a mi.</div>
+						</div>
+					</div>
+					<div class="col lg_5">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col xs_6 md_4</span>"&gt;
+								<span class="indent"><span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod magna et metus efficitur sagittis. Maecenas efficitur ante at lectus viverra, consequat varius tortor hendrerit. Praesent a pulvinar augue, vel porta urna. Quisque sodales posuere tristique. Ut vitae diam eu arcu accumsan lacinia et a mi.</span></span>
+								&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_6 md_4</span>"&gt;
+									<span class="indent"><span class="text">Maecenas efficitur ante at lectus viverra, consequat varius tortor hendrerit.</span></span>
+								&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_6 md_4</span>"&gt;
+									<span class="indent"><span class="text">Praesent a pulvinar augue, vel porta urna. Quisque sodales posuere tristique. Ut vitae diam eu arcu accumsan lacinia et a mi.</span></span>
+								&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_6 md_4</span>"&gt;
+									<span class="indent"><span class="text">Praesent a pulvinar augue, vel porta urna. Quisque sodales posuere tristique. Ut vitae diam eu arcu accumsan lacinia et a mi.</span></span>
+								&lt;/div&gt;
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col">
+						<h3 id="changing-column-order" class="primary">Changing column order</h3>
+						<p>You can change the order of columns using data attributes, keeping the HTML in the order you want but simply swapping the columns around using styles.</p>
+						<p>Add a data attribute of <em>data-bg_xs_order="2"</em> to the HTML element (replacing <em>xs_</em> with the relevant break-point prefix and the <em>2</em> with the order number required). You can use an order number of <em>1</em> through to <em>12</em>.</p>
+					</div>
+					<div class="col">
+						<div class="boxgrid example">
+							<div class="col xs_3" data-bg_xs_order="4" data-bg_sm_order="2" data-bg_md_order="3" data-bg_lg_order="4" data-bg_xl_order="4">One</div>
+							<div class="col xs_3" data-bg_xs_order="3" data-bg_sm_order="3" data-bg_md_order="4" data-bg_lg_order="1" data-bg_xl_order="2">Two</div>
+							<div class="col xs_3" data-bg_xs_order="2" data-bg_sm_order="4" data-bg_md_order="1" data-bg_lg_order="2" data-bg_xl_order="3">Three</div>
+							<div class="col xs_3" data-bg_xs_order="1" data-bg_sm_order="1" data-bg_md_order="2" data-bg_lg_order="3" data-bg_xl_order="1">Four</div>
+						</div>
+					</div>
+					<div class="col">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col xs_3</span>" data-bg_xs_order="<span class="attr-val">4</span>" data-bg_sm_order="<span class="attr-val">2</span>" data-bg_md_order="<span class="attr-val">3</span>" data-bg_lg_order="<span class="attr-val">4</span>" data-bg_xl_order="<span class="attr-val">4</span>"&gt;<span class="text">One</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3</span>" data-bg_xs_order="<span class="attr-val">3</span>" data-bg_sm_order="<span class="attr-val">3</span>" data-bg_md_order="<span class="attr-val">4</span>" data-bg_lg_order="<span class="attr-val">1</span>" data-bg_xl_order="<span class="attr-val">2</span>"&gt;<span class="text">Two</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3</span>" data-bg_xs_order="<span class="attr-val">2</span>" data-bg_sm_order="<span class="attr-val">4</span>" data-bg_md_order="<span class="attr-val">1</span>" data-bg_lg_order="<span class="attr-val">2</span>" data-bg_xl_order="<span class="attr-val">3</span>"&gt;<span class="text">Three</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3</span>" data-bg_xs_order="<span class="attr-val">1</span>" data-bg_sm_order="<span class="attr-val">1</span>" data-bg_md_order="<span class="attr-val">2</span>" data-bg_lg_order="<span class="attr-val">3</span>" data-bg_xl_order="<span class="attr-val">1</span>"&gt;<span class="text">Four</span>&lt;/div&gt;
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+					<div class="col">
+						<br>
+						<p>Alternatively you can apply a class of <em>first</em> or <em>last</em> (again prefixed with a break-point prefix) to move the column to the start or the end. Please bear in mind that this will take into account all columns inside one particular grid, not just on a row.</p>
+					</div>
+					<div class="col">
+						<div class="boxgrid example">
+							<div class="col xs_3">One</div>
+							<div class="col xs_3 xs_first">First</div>
+							<div class="col xs_3 xs_last">Last</div>
+							<div class="col xs_3">Two</div>
+						</div>
+					</div>
+					<div class="col">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col xs_3</span>"&gt;<span class="text">One</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3 xs_first</span>"&gt;<span class="text">First</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3 xs_last</span>"&gt;<span class="text">Last</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_3</span>"&gt;<span class="text">Two</span>&lt;/div&gt;
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+					<div class="col"><hr class="primary"></div>
+					<div class="col">
+						<h3 id="content-alignment" class="primary">Content alignment</h3>
+						<p>You can change the horizontal and vertical alignment of content within a column, and this can differ per breakpoint.</p>
+						<p>It is recommend to wrap the content of an aligned column in a containing block element. This is because an aligned column applies <em>flex</em> which causes it's content to stack in a row.</p>
+					</div>
+					<div class="col">
+						<h4>Horizontal alignment</h4>
+						<p>To apply horiztonal alignment apply a class built up of <a href="#breakpoints">break-point prefix</a> followed by <em>left</em>, <em>center</em> or <em>right</em>.</p>
+					</div>
+					<div class="col lg_7">
+						<div class="boxgrid example">
+							<div class="col xs_12 xs_left">Left aligned<br>content</div>
+							<div class="col xs_12 xs_center">Centre aligned<br>content</div>
+							<div class="col xs_12 xs_right">Right aligned<br>content</div>
+						</div>
+					</div>
+					<div class="col lg_5">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col xs_12 xs_left</span>"&gt;<span class="text">Left aligned</span>&lt;br&gt;<span class="text">content</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_12 xs_center</span>"&gt;<span class="text">Centre aligned</span>&lt;br&gt;<span class="text">content</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_12 xs_right</span>"&gt;<span class="text">Right aligned</span>&lt;br&gt;<span class="text">content</span>&lt;/div&gt;
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+					<div class="col">
+						<h4>Vertical alignment</h4>
+						<p>To apply vertical alignment apply a class built up of <a href="#breakpoints">break-point prefix</a> followed by <em>top</em>, <em>middle</em> or <em>bottom</em>.</p>
+					</div>
+					<div class="col lg_7">
+						<div class="boxgrid example">
+							<div class="col xs_4 xs_top" style="height: 170px;">Top</div>
+							<div class="col xs_4 xs_middle">Middle</div>
+							<div class="col xs_4 xs_bottom">Bottom</div>
+						</div>
+					</div>
+					<div class="col lg_5">
+						<code>
+							&lt;div class="<span class="attr-val">boxgrid</span>"&gt;
+							<span class="indent">
+								&lt;div class="<span class="attr-val">col xs_4 xs_top</span>" style="<span class="attr-val">height: 170px;</span>"&gt;<span class="text">Top</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_4 xs_middle</span>"&gt;<span class="text">Middle</span>&lt;/div&gt;<br>
+								&lt;div class="<span class="attr-val">col xs_4 xs_bottom</span>"&gt;<span class="text">Bottom</span>&lt;/div&gt;
+							</span>
+							&lt;/div&gt;
+						</code>
+					</div>
+				</div>
+			</div>
+		</article>
+		<footer id="site-footer" class="strip">
+			<div class="content">
+				&copy; Copyright 2016 BoxGrid.net - <a href="http://www.freepik.com" target="_blank">Icons by Freepik</a>
+			</div>
+		</footer>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-59509284-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>
